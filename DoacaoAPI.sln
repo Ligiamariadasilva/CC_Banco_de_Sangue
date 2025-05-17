@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoacaoAPI", "DoacaoAPI.csproj", "{7142E1B8-1B4D-C027-DE52-147F35E3BD4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7142E1B8-1B4D-C027-DE52-147F35E3BD4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7142E1B8-1B4D-C027-DE52-147F35E3BD4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7142E1B8-1B4D-C027-DE52-147F35E3BD4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7142E1B8-1B4D-C027-DE52-147F35E3BD4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8678F18-DEF9-4A92-B500-C3914931AAAD}
+	EndGlobalSection
+EndGlobal

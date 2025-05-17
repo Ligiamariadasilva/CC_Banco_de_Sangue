@@ -1,0 +1,6 @@
+C:\Users\rique\Documents\DoacaoAPI\obj\Debug\net8.0\DoacaoAPI.csproj.AssemblyReference.cache
+C:\Users\rique\Documents\DoacaoAPI\obj\Debug\net8.0\DoacaoAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rique\Documents\DoacaoAPI\obj\Debug\net8.0\DoacaoAPI.AssemblyInfoInputs.cache
+C:\Users\rique\Documents\DoacaoAPI\obj\Debug\net8.0\DoacaoAPI.AssemblyInfo.cs
+C:\Users\rique\Documents\DoacaoAPI\obj\Debug\net8.0\DoacaoAPI.csproj.CoreCompileInputs.cache
+C:\Users\rique\Documents\DoacaoAPI\obj\Debug\net8.0\DoacaoAPI.MvcApplicationPartsAssemblyInfo.cache
