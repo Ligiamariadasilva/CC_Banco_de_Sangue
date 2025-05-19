@@ -18,7 +18,6 @@ app.MapGet("/", () => "API de Doação de Sangue");
 
 RotaGET.Map(app);
 RotaPOST.Map(app);
-RotaPUT.Map(app);
 RotaDELETE.Map(app);
 
 DoacoesBancoDeDados(app);
