@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DoacaoAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6db3af250e579ab9473269d135dc378b54dc9535")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ffebbbc141cce538418044a1dc4bcc787702de8")]
 [assembly: System.Reflection.AssemblyProductAttribute("DoacaoAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DoacaoAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
