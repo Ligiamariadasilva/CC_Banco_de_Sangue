@@ -1,9 +1,13 @@
 API DOAÇÃO DE SANGUE
 
 Nome: Amanda Ferreira RA: 39248151
+
 Nome: Ligia Maria RA: 39106021
+
 Nome: Luiz Storrer RA: 41859863
+
 Nome: Wellington Pedro RA: 38414392
+
 
 OBJETIVO DO PROJETO: O objetivo deste projeto é desenvolver uma API REST voltada
 ao cadastro e gerenciamento de doadores de sangue. A API permite realizar operações de
@@ -21,12 +25,19 @@ Esses dados foram estruturados em uma classe Doador.cs, que serviu como base par
 mapeamento do banco e definição das rotas. 
 
 ORGANIZAÇÃO DO CÓDIGO: O código da aplicação está dividido da seguinte forma:
+
 a. Models/Doador.cs – Estrutura da entidade principal
+
 b. Data/DoadoresContext.cs – Contexto do banco de dados com Entity Framework
+
 c. Rotas/GetRoutes.cs – Métodos de listagem e consulta
+
 d. Rotas/PostRoutes.cs – Cadastro de novos doadores
+
 e. Rotas/DeleteRoutes.cs – Remoção de doadores
+
 f. Program.cs – Configuração principal da API 
+
 
 JUSTIFICATIVA TÉCNICA: A modelagem da entidade Doador foi construída com foco nos
 dados essenciais ao controle de bancos de sangue. A separação em arquivos distintos
