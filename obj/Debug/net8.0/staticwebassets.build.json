@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "5AvR8GLjllxydgByZvKZDXMA+E62rnQfFJLFzNZcyIo=",
+  "Hash": "Bg8FcpUa4cRbuCg3d5CcDKpGX+JevPrt+XFyt9Xv09s=",
   "Source": "DoacaoAPI",
   "BasePath": "_content/DoacaoAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

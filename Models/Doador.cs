@@ -1,17 +1,18 @@
-namespace DoadoresApi.Models;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-//Define a classe Doador, que representa um doador de sangue no sistema.
-public class Doador
+namespace DoadoresApi.Models
 {
-    //Identificador do doador
-    public int Id { get; set; }
+    [Table("doador")] // <-- define o nome exato da tabela no MySQL
+    public class Doador
+    {
+        [Key]
+        public int Id { get; set; }
 
-    //Nome do doador
-    public string Nome { get; set; }
+        public string Nome { get; set; }
 
-    //Tipo sanguineo do Doador
-    public string TipoSanguineo { get; set; }
+        public string TipoSanguineo { get; set; }
 
-    //Data da ultima Doacao que o doador fez
-    public DateTime DataUltimaDoacao { get; set; }
+        public DateTime DataUltimaDoacao { get; set; }
+    }
 }
