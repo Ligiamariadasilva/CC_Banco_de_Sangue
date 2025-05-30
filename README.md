@@ -58,3 +58,39 @@ código.
 A integração com o Entity Framework e uso de banco SQLite atendem às necessidades de
 persistência com simplicidade, facilitando o uso em ambiente local ou portável. A base de
 dados foi populada com alguns registros iniciais de doadores para fins de teste e validação. 
+
+# 🩸 API de Doação de Sangue
+
+API desenvolvida em C# com ASP.NET Core para gerenciar doadores de sangue, permitindo operações de cadastro, consulta, atualização e exclusão de registros no banco de dados.
+
+---
+
+## ✅ Funcionalidades
+
+- 📋 Listar todos os doadores
+- 🔍 Buscar doador por ID
+- ➕ Cadastrar novo doador
+- ✏️ Atualizar dados de um doador
+- 🗑️ Remover doador
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- C# com ASP.NET Core 8
+- Entity Framework Core
+- Banco de dados **MySQL**
+- Swagger (documentação interativa)
+- Pomelo.EntityFrameworkCore.MySql
+- Visual Studio Code / Terminal
+
+---
+
+## 📦 Como executar localmente
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/Ligiamariadasilva/API_C_sharp.git
+   cd API_C_sharp
+
