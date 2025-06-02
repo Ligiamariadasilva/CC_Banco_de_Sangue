@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero Doar - Banco de Sangue</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-heart nav-icon"></i>
+                <span class="nav-title">Banco de Sangue</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" data-page="home">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a href="quero-doar.html" class="nav-link active" data-page="donate">
+                    <i class="fas fa-heart"></i>
+                    Quero Doar
+                </a>
+                <a href="admin.html" class="nav-link" data-page="admin">
+                    <i class="fas fa-shield-alt"></i>
+                    Área Admin
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Header -->
+            <div class="page-header">
+                <h1 class="page-title">Posso Doar Sangue?</h1>
+                <p class="page-description">
+                    Verifique se você atende aos critérios para doação de sangue. É importante seguir todas as orientações para
+                    garantir a segurança do doador e do receptor.
+                </p>
+            </div>
+
+            <!-- Alert -->
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation-triangle alert-icon"></i>
+                <div class="alert-content">
+                    <strong>Importante:</strong> Esta é apenas uma orientação inicial. A avaliação final será feita por um
+                    profissional de saúde no local da doação.
+                </div>
+            </div>
+
+            <div class="criteria-grid">
+                <!-- Can Donate -->
+                <div class="criteria-card">
+                    <div class="criteria-header">
+                        <i class="fas fa-check-circle criteria-icon success"></i>
+                        <h2 class="criteria-title">Você PODE doar se:</h2>
+                        <p class="criteria-subtitle">Critérios que permitem a doação de sangue</p>
+                    </div>
+                    <div class="criteria-content">
+                        <ul class="criteria-list">
+                            <li class="criteria-item">
+                                <i class="fas fa-check-circle item-icon success"></i>
+                                <span>Ter entre 16 e 69 anos (menores de 18 precisam de autorização)</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-check-circle item-icon success"></i>
+                                <span>Pesar no mínimo 50kg</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-check-circle item-icon success"></i>
+                                <span>Estar bem de saúde</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-check-circle item-icon success"></i>
+                                <span>Ter dormido pelo menos 6 horas na noite anterior</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-check-circle item-icon success"></i>
+                                <span>Estar alimentado (evitar alimentos gordurosos 4h antes)</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-check-circle item-icon success"></i>
+                                <span>Apresentar documento oficial com foto</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-check-circle item-icon success"></i>
+                                <span>Não ter feito tatuagem ou piercing nos últimos 12 meses</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-check-circle item-icon success"></i>
+                                <span>Não ter tido hepatite após os 11 anos de idade</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cannot Donate -->
+                <div class="criteria-card">
+                    <div class="criteria-header">
+                        <i class="fas fa-times-circle criteria-icon danger"></i>
+                        <h2 class="criteria-title">Você NÃO pode doar se:</h2>
+                        <p class="criteria-subtitle">Critérios que impedem a doação de sangue</p>
+                    </div>
+                    <div class="criteria-content">
+                        <ul class="criteria-list">
+                            <li class="criteria-item">
+                                <i class="fas fa-times-circle item-icon danger"></i>
+                                <span>Estar gripado, resfriado ou com febre</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-times-circle item-icon danger"></i>
+                                <span>Estar grávida ou amamentando</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-times-circle item-icon danger"></i>
+                                <span>Ter usado drogas ilícitas injetáveis</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-times-circle item-icon danger"></i>
+                                <span>Ter tido malária</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-times-circle item-icon danger"></i>
+                                <span>Ter doença de Chagas</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-times-circle item-icon danger"></i>
+                                <span>Ter HIV/AIDS ou hepatite B ou C</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-times-circle item-icon danger"></i>
+                                <span>Ter comportamento de risco para DSTs</span>
+                            </li>
+                            <li class="criteria-item">
+                                <i class="fas fa-times-circle item-icon danger"></i>
+                                <span>Ter doado sangue há menos de 60 dias (homens) ou 90 dias (mulheres)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Temporary Restrictions -->
+            <div class="restrictions-card">
+                <div class="restrictions-header">
+                    <i class="fas fa-exclamation-triangle restrictions-icon warning"></i>
+                    <h2 class="restrictions-title">Restrições Temporárias</h2>
+                    <p class="restrictions-subtitle">Situações que exigem um período de espera antes da doação</p>
+                </div>
+                <div class="restrictions-content">
+                    <div class="restrictions-grid">
+                        <div class="restriction-item">
+                            <span class="restriction-condition">Vacina da gripe</span>
+                            <span class="restriction-time">48 horas</span>
+                        </div>
+                        <div class="restriction-item">
+                            <span class="restriction-condition">Vacina COVID-19</span>
+                            <span class="restriction-time">7 dias</span>
+                        </div>
+                        <div class="restriction-item">
+                            <span class="restriction-condition">Tratamento dentário simples</span>
+                            <span class="restriction-time">72 horas</span>
+                        </div>
+                        <div class="restriction-item">
+                            <span class="restriction-condition">Extração dentária</span>
+                            <span class="restriction-time">7 dias</span>
+                        </div>
+                        <div class="restriction-item">
+                            <span class="restriction-condition">Cirurgia de pequeno porte</span>
+                            <span class="restriction-time">3 meses</span>
+                        </div>
+                        <div class="restriction-item">
+                            <span class="restriction-condition">Cirurgia de grande porte</span>
+                            <span class="restriction-time">6 meses</span>
+                        </div>
+                        <div class="restriction-item">
+                            <span class="restriction-condition">Endoscopia/Colonoscopia</span>
+                            <span class="restriction-time">6 meses</span>
+                        </div>
+                        <div class="restriction-item">
+                            <span class="restriction-condition">Acupuntura</span>
+                            <span class="restriction-time">12 meses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="process-card">
+                <div class="process-header">
+                    <h2 class="process-title">Processo de Doação</h2>
+                    <p class="process-subtitle">Etapas do processo de doação de sangue</p>
+                </div>
+                <div class="process-content">
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <h3 class="step-title">Cadastro</h3>
+                            <p class="step-description">Apresentação de documento e preenchimento de formulário</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <h3 class="step-title">Triagem</h3>
+                            <p class="step-description">Verificação de sinais vitais e teste de anemia</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <h3 class="step-title">Entrevista</h3>
+                            <p class="step-description">Conversa com profissional de saúde sobre seu histórico</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <h3 class="step-title">Doação</h3>
+                            <p class="step-description">Coleta do sangue (aproximadamente 10-15 minutos)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/navigation.js"></script>
+</body>
+</html>

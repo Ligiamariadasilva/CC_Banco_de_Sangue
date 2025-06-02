@@ -3712,19 +3712,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ligia Maria\\.nuget\\packages\\": {}
+    "C:\\Users\\ton36\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ligia Maria\\Desktop\\CC_API_SANGUE\\API_C_sharp\\DoacaoAPI.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\CC_Banco_de_Sangue\\DoacaoAPI.csproj",
       "projectName": "DoacaoAPI",
-      "projectPath": "C:\\Users\\Ligia Maria\\Desktop\\CC_API_SANGUE\\API_C_sharp\\DoacaoAPI.csproj",
-      "packagesPath": "C:\\Users\\Ligia Maria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ligia Maria\\Desktop\\CC_API_SANGUE\\API_C_sharp\\obj\\",
+      "projectPath": "C:\\xampp\\htdocs\\CC_Banco_de_Sangue\\DoacaoAPI.csproj",
+      "packagesPath": "C:\\Users\\ton36\\.nuget\\packages\\",
+      "outputPath": "C:\\xampp\\htdocs\\CC_Banco_de_Sangue\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ligia Maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ton36\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3797,19 +3797,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.16, 8.0.16]"
+            "version": "[8.0.14, 8.0.14]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.16, 8.0.16]"
+            "version": "[8.0.14, 8.0.14]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.16, 8.0.16]"
+            "version": "[8.0.14, 8.0.14]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.16, 8.0.16]"
+            "version": "[8.0.14, 8.0.14]"
           }
         ],
         "frameworkReferences": {
@@ -3820,7 +3820,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

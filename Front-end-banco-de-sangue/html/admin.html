@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Admin - Banco de Sangue</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-heart nav-icon"></i>
+                <span class="nav-title">Banco de Sangue</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" data-page="home">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a href="quero-doar.html" class="nav-link" data-page="donate">
+                    <i class="fas fa-heart"></i>
+                    Quero Doar
+                </a>
+                <a href="admin.html" class="nav-link active" data-page="admin">
+                    <i class="fas fa-shield-alt"></i>
+                    Área Admin
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Login Form -->
+        <div id="loginSection" class="login-section">
+            <div class="login-container">
+                <div class="login-card">
+                    <div class="login-header">
+                        <i class="fas fa-shield-alt login-icon"></i>
+                        <h1 class="login-title">Área Administrativa</h1>
+                        <p class="login-description">Acesso restrito para administradores do sistema</p>
+                    </div>
+                    <div class="login-content">
+                        <form id="loginForm" class="login-form">
+                            <div class="form-group">
+                                <label for="username" class="form-label">Usuário</label>
+                                <input type="text" id="username" class="form-input" placeholder="Digite seu usuário" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="form-label">Senha</label>
+                                <input type="password" id="password" class="form-input" placeholder="Digite sua senha" required>
+                            </div>
+                            <div id="loginError" class="alert alert-error" style="display: none;">
+                                <i class="fas fa-exclamation-triangle alert-icon"></i>
+                                <span class="alert-message">Usuário ou senha incorretos</span>
+                            </div>
+                            <button type="submit" id="loginBtn" class="btn btn-primary btn-full">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard -->
+        <div id="dashboardSection" class="dashboard-section" style="display: none;">
+            <div class="container">
+                <!-- Header -->
+                <div class="dashboard-header">
+                    <div class="header-content">
+                        <h1 class="dashboard-title">Painel Administrativo</h1>
+                        <p class="dashboard-description">Gerenciamento de doadores de sangue</p>
+                    </div>
+                    <button id="logoutBtn" class="btn btn-outline">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Sair
+                    </button>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-label">Total de Doadores</span>
+                            <i class="fas fa-users stat-icon"></i>
+                        </div>
+                        <div class="stat-value" id="totalDonors">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-label">Doações Este Mês</span>
+                            <i class="fas fa-tint stat-icon"></i>
+                        </div>
+                        <div class="stat-value">12</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="stat-label">Tipo Mais Comum</span>
+                            <i class="fas fa-tint stat-icon"></i>
+                        </div>
+                        <div class="stat-value">O+</div>
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <div id="message" class="alert alert-success" style="display: none;">
+                    <span class="alert-message"></span>
+                </div>
+
+                <!-- Actions -->
+                <div class="actions-header">
+                    <h2 class="section-title">Lista de Doadores</h2>
+                    <button id="newDonorBtn" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Novo Doador
+                    </button>
+                </div>
+
+                <!-- Donors Table -->
+                <div class="table-card">
+                    <div class="table-container">
+                        <table class="donors-table">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Email</th>
+                                    <th>Telefone</th>
+                                    <th>Tipo</th>
+                                    <th>Idade</th>
+                                    <th>Peso</th>
+                                    <th>Última Doação</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="donorsTableBody">
+                                <!-- Donors will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="donorModal" class="modal" style="display: none;">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle" class="modal-title">Novo Doador</h2>
+                    <button id="closeModal" class="modal-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="donorForm" class="donor-form">
+                        <div class="form-group">
+                            <label for="donorName" class="form-label">Nome</label>
+                            <input type="text" id="donorName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorEmail" class="form-label">Email</label>
+                            <input type="email" id="donorEmail" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorPhone" class="form-label">Telefone</label>
+                            <input type="text" id="donorPhone" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorBloodType" class="form-label">Tipo Sanguíneo</label>
+                            <select id="donorBloodType" class="form-select" required>
+                                <option value="">Selecione o tipo sanguíneo</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="donorAge" class="form-label">Idade</label>
+                                <input type="number" id="donorAge" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="donorWeight" class="form-label">Peso (kg)</label>
+                                <input type="number" id="donorWeight" class="form-input" step="0.1" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="donorLastDonation" class="form-label">Última Doação</label>
+                            <input type="date" id="donorLastDonation" class="form-input" required>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-flex">
+                                <span id="submitBtnText">Cadastrar</span>
+                            </button>
+                            <button type="button" id="cancelBtn" class="btn btn-outline">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/navigation.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>
